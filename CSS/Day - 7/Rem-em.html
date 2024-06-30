@@ -1,0 +1,83 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Rem-em.css">
+</head>
+<body>
+        
+        <!-- REm and Em : 
+    
+    
+    
+Em:
+---
+
+Unit    Relative to 
+
+em      Font size of the parent, in the case of typographical properties like
+        font-size, and font size of the element itself , int the case of 
+        other properties like width.
+
+
+        -----------------
+        |               |
+        |  ---------    | 
+        |  |         |  | 
+        |  |         |  | -> outer 10px
+        |  -----------  |
+        |               |
+        |_______________|
+
+
+
+        Dravback of Em
+        ______________
+
+        => snowballing effect in nested elements
+
+
+-->
+
+        <!-- <div id="outer">
+                This is outer
+                <div id="inner">
+                        This is inner
+                </div>
+        </div>
+
+        <button> Click ME</button> -->
+
+        <section>
+                section
+                <div>
+                        div1
+                        <div>
+                                div2
+                                <div> 
+                                        div3
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+         <!-- 
+                Rem(Root em)
+        
+                Unit   relative to 
+                rem     fontsize fo the root element
+
+                  ems -> par / self
+                rems -> root el  ( set based on  root)
+        
+        -->
+
+      
+        
+</body>
+</html>

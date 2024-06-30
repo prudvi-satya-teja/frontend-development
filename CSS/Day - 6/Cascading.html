@@ -1,0 +1,108 @@
+<!-- CSS: Cascading Style sheets-->
+
+<!-- 
+    =>   What is cascade in CSS?
+
+    the CSS cascade algorithm's job is to select CSS declaration in order to determine the 
+    correct values for CSS properties
+
+    h2 {
+        background-color: yellow;
+    }
+
+    h2 {
+        backgroud-color: blue;     <----- final color is blue
+    }
+
+-->
+
+ <!-- 
+    Rule 1 : 
+
+    if same selecors then priority for the last one 
+ -->
+
+
+ <!-- Selector Specificity -->
+
+<!-- 
+    =>   What is Specificity?
+
+    Specificity is an algorithm that calcualte the weight 
+    that is applied to a given CSS declaration.
+
+    
+
+    ______________     ___________________    _____________________
+        
+       id                 class,                   element & 
+                        attribute &               pseduo - element
+                        pesudo-class
+
+     
+    priority  =   id   >    class   >     element
+
+    Eg; score = 1
+
+     h2 {
+        background-color: yellow;
+    } 
+
+      
+        0                    0                        1
+    ______________     ___________________    _____________________
+        
+       id                 class,                   element & 
+                        attribute &               pseduo - element
+                        pesudo-class
+    
+        
+
+
+     Eg;  score = 20
+
+     .myClass:hover {
+         color: blue
+    } 
+
+      
+        0                    2   (1 + 1)                 0
+    ______________     ___________________    _____________________
+        
+       id                 class,                   element & 
+                        attribute &               pseduo - element
+                        pesudo-class
+
+
+    
+
+ 
+-->
+
+<!-- 
+    What to remember?
+
+    1) id > class > element
+    2) more selectors  > less selectors
+      |
+      css
+
+    3) if same specificity then we go for cascading 
+-->
+
+ 
+<!-- 
+        INLINE SPECIFICITY  
+        -------------------
+        => inline styles are more specific than id
+
+
+                                                                  
+    ________________      ______________     ___________________    _____________________
+                                
+       inline style           id                 class,                   element & 
+                                                attribute &               pseduo - element
+                                                pesudo-class
+    but we avoid inline because we didn't able change after it 
+   
+-->

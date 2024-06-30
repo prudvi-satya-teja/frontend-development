@@ -1,0 +1,55 @@
+  <!-- 
+        for selectors priority 
+        => id > class > element 
+
+            Eg: 
+
+            <h1 id="greet" class="myclass"> Hello!</h1>
+
+                h1 {
+                    color:pink;
+                }
+
+                #greet {
+                    color: yellow;
+                }
+
+                .myclass {
+                    color: brown;
+                }
+
+        Q) what is the color of h1 = > yellow
+
+         -->
+
+
+    <!-- 
+        2) we have find specificity for all
+
+        => descedent sel  --   0    0     2 (2)
+             class  sel   --   0    1     0 (10)
+             element  sel  --  0    0     1  (1)
+                              id  class   element
+
+            
+      -->
+
+       <!-- 
+        2) 
+
+        => if clash occurs the last one will got the priority
+                              id  class   element
+
+            
+
+
+        => div.greetDiv .greet   <- 0     2     1 (21)
+
+
+          div.greetDiv p.greet  <- 0      2     1 (21)   // will win
+
+
+            .greetDiv .greet    <- 0      2     0 (20)
+
+            
+      -->

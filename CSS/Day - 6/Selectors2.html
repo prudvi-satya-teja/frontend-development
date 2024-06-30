@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<body>
+
+    <!-- Selectors in CSS-->
+
+
+      <!-- 
+             Descendant Selector  
+             -------------------
+             Eg: Select all paragraphs inside divs
+
+       ( descendant 
+       selector ) - div p {
+                          property : value;    
+                      }
+
+
+            eg: grandparent 
+                      \ 
+                      parents
+                        \ 
+                        us
+            eg: <p>
+                   <span>
+                         <ul>
+                             <li>
+                             <li>  -- descendant level
+
+            Eg: 
+                <p> </p>
+                <span> 
+                    <p></p>
+                </span>
+
+                <div>
+                    <p></p>
+                <div>
+                        
+
+
+      -->
+
+
+       <!-- 
+             Adjacent Sibling Combinator   ( + sign -> combinator )
+             --------------------------
+             Eg: Heading3 that comes immediately after any paragraph
+
+       ( adjacent 
+         sibling 
+       selector ) - p + h3 {
+                          property : value;    
+                      }
+
+
+             Eg: <p>
+                 <h3>
+                 <h3>
+                 <div> <h3> </h3> </div>
+
+                eg; el1 + el2
+      -->
+
+
+      <!-- 
+             child Combinator 
+             --------------
+             Eg: selects all buttons which are direct children of spans
+
+       ( child 
+        combinator ) - span > button  {                    
+                                        property : value;    
+                                    }
+
+       Eg: 
+            <div> 
+                <h3> </h3>      ( child - direct descedant)
+           </div>
+
+           div > p {
+
+           }
+
+
+
+      -->
+
+      <!-- 
+             Attribute Selector  
+             -------------
+             => select elements based on the presence or value of a given attribute
+
+       ( attribute
+       selector ) - input[attr="value"] {                     
+                          property : value;    
+                      }
+
+            => 
+
+            Eg: 
+                  <h1>
+                  <button>
+                  <p>
+                  ....
+            
+            declareation:  ( all are one group)
+                           <h1 class="a">
+                          <button class=a">
+                          <p class="a">
+
+
+                              .a {                     
+                                    property : value;    
+                                }
+
+      -->
+
+    
+      
+  
+    
+</body>
+</html>

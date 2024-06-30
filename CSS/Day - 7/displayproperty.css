@@ -1,0 +1,40 @@
+/* h2 {
+    display: inline;
+    background-color: pink;
+}
+
+span {
+    display: block;
+    background-color: limegreen;
+} */
+/* 
+span {
+     background-color: rgb(50, 102, 205); 
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px; /* L and Right are set
+    margin: 10px;
+}
+
+div {
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px; 
+    margin: 10px;
+}
+*/
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display:  inline-block;
+}
+
+#third {
+    display: none;
+}

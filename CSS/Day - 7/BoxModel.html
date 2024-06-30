@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model </title>
+</head>
+<body>
+
+    <!-- INTERMEDIATE CSS  -->
+
+    <!-- Box Model in css  -->
+
+    <!-- 
+         => everything in html is interpredted as a box
+
+        > height
+        > width
+        > border
+        > padding
+        > margin
+
+                ________________________________
+                |           width               |
+                |      ___________________      |
+                |      |                  |     |
+                |      |                  |     |
+                |height|   content        |     |
+                |      |                  |     |
+                |      |                  |     |
+                |      |__________________|     |     below box is here
+                |               paddding        | 
+                |_______________________________|
+                border          |
+                                | <-- margin 
+                ________________________________
+                |           width               |
+                |      ___________________      |
+                |      |                  |     |
+                |      |                  |     |
+                |height|   content        |     |
+                |      |                  |     |
+                |      |                  |     |
+                |      |__________________|     |     
+                |               paddding        | 
+                |_______________________________|
+
+
+                the difference b/w two paragraph are used - width
+
+
+                
+
+     -->
+
+
+        <!--          Height 
+                      -------
+            
+             => by default it sets the content area height of the element
+
+
+             div {
+                height : 100px;
+             }
+        
+        
+        
+        
+        -->
+
+
+         <!--          width 
+                      -------
+            
+             => by default it sets the content area width of the element
+
+
+             div {
+                width : 300px;
+             }
+        
+        
+        
+        
+        -->
+
+
+            <!--      Border property 
+                      -------
+            
+             => Used to set  an element's border
+
+             > border-width
+             > border-style  (dotted, double line)
+             > border-color   (red, pink, greeen)
+
+
+             
+             => border shorthand
+                ----------------
+                width | style | color
+
+                div {
+                    border: 2px solid blue;
+                }
+        
+        
+        -->
+
+
+           <!--      border sides
+                      -------
+            
+             => to control an individual side of the box
+              
+             eg: one side blue and other three sides yello
+
+             > border-left
+             > border-right
+             > border-top
+             > border-bottom
+
+             div {
+                    border-left-color: yellow;
+                    border-left-style: dashed;
+                }
+        
+        
+        -->
+
+        
+           <!--      border radius
+                      -------
+            
+             => used to round the corners of an element's outer border edge
+              
+             eg: 
+
+             div {
+                    border-radius: 15px;
+                }
+
+                  div {
+                    border-radius: 50%;
+                }
+        
+        
+        -->
+    
+</body>
+</html>
