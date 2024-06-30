@@ -1,0 +1,55 @@
+/* div {
+    width: 200px;
+    height: 200px;
+}
+
+#class1 {
+    background-color: yellow;
+    z-index: -2;
+
+}
+
+#class2 {
+    width: 300px;
+    background-color: green;
+    position: relative;
+    bottom: 80px;
+    z-index: -1;
+}
+
+#class2:hover {
+    box-shadow: 0px 4px 4px 0 rgb(19, 6, 19);
+}
+#class1:hover {
+    box-shadow: 0px 4px 4px 0 rgb(234, 117, 234);
+}
+
+#class3 {
+    background-color: pink;
+}
+
+#class3:hover {
+    box-shadow: 2px 4px 4px 0 blue;
+    z-index: -1;
+} */
+
+h1 {
+    width: 200px;
+    background-color: red;
+}
+
+h2 {
+    background-color: blue;
+}
+
+@media (max-width: 200px)  and (min-width: 100px){
+    h1 {
+        background-color: rgb(220, 63, 220);
+    }
+}
+
+@media (orientation: landscape) {
+    h1 {
+        background-color: rgb(194, 173, 173);
+    }
+}

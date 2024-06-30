@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <link rel="stylesheet" href="alignitems.css" />
+</head>
+<body>
+    
+    <!--
+        The Align items
+        -------------------
+
+       distributes our items along the cross axis
+
+        -> align-items: flex-start;
+       -> align-items: flex-end;
+        -> align-items: center;
+        ->align-items: baseline;
+    -->
+
+    
+    <h1>Flexbox Playground</h1>
+    <div id="container">
+        <div style="background-color: #9400d3;">violet</div>
+        <div style="background-color: #4b0082;">indigo</div>
+        <div id="blue" style="background-color: #0000ff;">blue</div>
+        <div style="background-color: #00ff00;">green</div>
+        <div style="background-color: #ffff00; height: 200px">yellow</div>
+        <div id="orange" style="background-color: #ff7f00;">orange</div>
+        <div style="background-color: #ff0000;">red</div>
+    </div>
+
+
+     <!--
+        The Align content
+        -------------------
+
+       it sets the distribution of space between and around conten items along a 
+       flexbox's cross-axis
+
+        -> align-content: flex-start / flex-end / center;
+       -> align-content: space-between / space-around / evenly
+        -> align-content : baseline; 
+    -->
+
+
+    <!--
+        The Align Self
+        -------------------
+
+       Aligns an item along the cross axis 
+
+        -> align-self: flex-start;
+        -> align-self: flex-end;
+        ->align-self : center;
+        -> align-self : baseline; 
+    -->
+
+
+    <!--
+        The Flex Sizing
+        -------------------
+
+       => flex-basis 
+       it sets the initial main size of a flex item
+
+        -> flex-basis: 100px;
+
+
+     => flex-grow
+        it specifies how much of the flex contianer's reaminaing space should be 
+        asssigned to the flex item's main size
+
+        -> flex-groww: 1  (default)
+
+    => flex-shrink
+        it sets the flex shrink factor of a flex item
+        -> flex-shrink: 1
+    -->
+
+
+    <!-- 
+        Flex Shorthand
+        ---------------
+
+        > flex-grow | flex-shrink | flex-basis
+          eg: flex : 2 2 100px;
+
+        > flex-grow | flex-basis
+          eg: 2 100px
+
+        > flex-grow(unitless)
+           eg: flex: 2;
+
+        > flex-basis
+           eg 100px;
+    -->
+
+
+
+
+
+    
+    
+</body>
+</html>

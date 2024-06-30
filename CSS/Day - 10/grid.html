@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <link rel="stylesheet" href="grid.css" />
+</head>
+<body>
+    
+    <!--
+        CSS Grid
+        ----------
+        
+        -> Setting a containter's display to grid will make all children grid items
+
+            eg : container {
+                display : grid;
+            }
+       
+    -->
+    <h1>Grid Playground</h1>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+      <!--
+        CSS Grid Model
+        ----------
+                     column lines
+
+                    L1   L2   L3   l4
+                L1  +----+----+----+
+                    |    |    |    |
+                L2  +----+----+----+      (row lines)
+                    |    |    |    |
+                L3  +----+----+----+
+                    |    |    |    |     -> grid track (betwenn two lines space)
+                L4  +----+----+----+
+
+                Grid lines 
+
+                Grid cell
+
+                Grid Track -> grid track (betwenn two lines space)
+
+    -->
+
+      <!--
+        Grid Template
+        ----------
+            They define the lines and track sizing 
+
+            eg: 
+
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns
+
+                
+                L1  +----+----+----+
+                      track1 (100px)
+                L2  +----+----+----+      
+                    track2 (100px)
+                L3  +----+----+----+
+                     track3 (100px)   -> grid track (betwenn two lines space)
+                L4  +----+----+----+
+    -->
+
+    
+      <!--
+        Grid Template Repeat
+        --------------------
+            Repeat is used to divide all available space 
+
+            eg: 
+
+            grid-template-rows: repeat(count, 1fr)  => 1 fracion of 100% eidth (available spaace)
+
+            grid-template-columns: repeat(count, 1fr) 
+
+            grid-template-rows: repeat(2, 1fr)
+
+            grid-template-rows: 1fr 1fr
+
+                
+               
+
+    -->
+
+
+
+
+
+    
+    
+</body>
+</html>

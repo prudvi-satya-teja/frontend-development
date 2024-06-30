@@ -1,0 +1,119 @@
+/* #transition {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(59, 217, 59);
+    transition: all 2s ease-in-out 0.5s;
+    box-shadow: 3px 3px 4px 5px rgb(219, 234, 219);
+    background-image: url("man.jpg");
+    border-radius: 15px 0 15px 0;
+    
+}
+
+#transition:hover {
+    background-color: red;
+    width:400px;
+    font-size: 20px;
+    height: 400px;
+    box-shadow: 1px 2px 3px 4px rgb(15, 3, 3);
+    background-image: url("woman.jpg");
+    opacity: 0.5;
+    
+    background-size: cover;
+    color: white;
+
+}
+
+#transform {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 20px  20px 20px 200px;
+    /* transform: scale(1.5); 
+    background-image: url("woman.jpg");
+}
+
+#transform:hover {
+    background-color: red;
+    transform: scale(1.5);
+    background-image: url("man.jpg");
+    
+}
+
+
+.desc {
+    margin: 10px 23px 10px 50px;
+}
+
+img {
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px 4px white;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+img:hover {
+    box-shadow: 0px 8px 8px 0px goldenrod;
+    border-radius: 10px;
+} */
+
+
+
+img {
+    border: 2px solid black;
+    border-radius: 10px;
+    animation: ColAnimation 3s ease-in 3s 0 alternate-reverse;
+
+}
+
+@keyframes ColAnimation {
+    from {
+        height: 20px;
+    }
+    to {
+        height: 250px;
+    }
+}
+
+div {
+    width: 400px;
+    height: 100px;
+    background-color: greenyellow;
+}
+.class1 {
+
+    animation: divAnimation 4s ease 2s  3 normal;
+}
+
+.class2 {
+    animation: divAnimation 4s ease 2s 3 reverse;
+}
+
+.class3 {
+    animation: divAnimation 4s ease 2s 3 alternate;
+}
+
+.class4 {
+    animation: divAnimation 4s ease 2s 3 alternate-reverse;
+
+    
+}
+
+
+
+@keyframes divAnimation {
+    0% {
+        width: 10px;
+        background-color: yellow;
+        font-size: 10px;
+    }
+    50% {
+        width: 400px;
+        background-color: red;
+        font-size: 30px;
+        text-align: center;
+    }
+    80% {
+        width: 600px;
+        background-color: orange;
+    }
+}
