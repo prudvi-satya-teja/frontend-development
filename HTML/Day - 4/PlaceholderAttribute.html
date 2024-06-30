@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Attribute</title>
+</head>
+<body>
+
+    <!--   Placeholder attribute-->
+    <!-- 
+
+        => what should be there in the box 
+
+        <input type="text" placeholder="Enter name">
+    -->
+
+    <form action="/action">
+
+        <label>
+            Username
+            <input type="text" placeholder="username"/>
+        </label><br>
+        
+        <label>
+        Password
+        <input type="password" placeholder="password" />
+        </label>
+    </form >
+
+    
+    <!--   Label-->
+    <!-- 
+
+        => Label element represents  a caption for a item in a user interface
+
+            <label> 
+                Enter your username:
+                <input type="text" placeholder="username">
+            </label>
+
+
+        =>      // label classical approach
+
+                <label for="username">Enter your username: </label>
+
+                <input type="text" id="username" placeholder="username">
+           
+    --><br>
+
+    <form action="/action">
+        <div>
+            <label for="username"> Username : </label>
+            <input type="text" id="username" placeholder="username">
+        </div>
+        
+        <div>
+            <label for="password"> Password : </label>
+            <input type="password" id="password" placeholder="password" />
+        </div>
+
+        <div>
+            <label for="age"> Age: </label>
+            <input type="number" placeholder="age" id="age">
+        </div>
+    
+    
+</body>
+</html>

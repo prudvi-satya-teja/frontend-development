@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+<body>
+
+    <!-- TABLES   -->
+    <!-- 
+        => tables are used to represent real life table data
+
+            EG:     name        rollno 
+                    aman        25
+                  shradha       85
+                   rajat        12
+                  sudheer        10 
+
+        => name, rollno -- table header
+
+        => row --- horizontal data line
+        => column --- vertical data line
+
+        Systax: 
+        ------
+
+        <table>
+            <caption> Table caption </caption>
+                <tr>
+                    <th>header 1</th>
+                    <th> header 2</th>
+                </tr>
+                <tr>
+                    <td>data1</td>
+                    <td>data2</td>
+                </tr>
+        </table>
+
+
+        <tr> = used to disaplay table row
+        <td> = used to display table data
+        <th> = used to display table header
+
+    -->
+
+    <table border="black">
+        <caption> Food menu </caption>
+        <tr>
+            <th>Item</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>frooti</td>
+            <td> 10</td>
+        </tr>
+        <tr>
+            <td>samosa</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>chips</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+
+    <!-- SEMANTICS IN TABLES   -->
+    <!-- 
+
+        <thead> = to wrap table header
+        <tbody> = to wrap table body
+        <tfoot> = to wrap table footer  (not mostly used for finding total or sum)
+
+    -->
+
+    <table>
+        <caption> Food menu </caption>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>frooti</td>
+                <td> 10</td>
+            </tr>
+            <tr>
+                <td>samosa</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>chips</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>
